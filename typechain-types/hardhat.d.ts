@@ -29,9 +29,33 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Greeter__factory>;
     getContractFactory(
+      name: "Auction",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Auction__factory>;
+    getContractFactory(
+      name: "AuctionHouseService",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.AuctionHouseService__factory>;
+    getContractFactory(
       name: "USDC",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.USDC__factory>;
+    getContractFactory(
+      name: "IAuction",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IAuction__factory>;
+    getContractFactory(
+      name: "IAuctionHouseService",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IAuctionHouseService__factory>;
+    getContractFactory(
+      name: "IAuctionHouseService",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IAuctionHouseService__factory>;
+    getContractFactory(
+      name: "IAuction",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IAuction__factory>;
 
     getContractAt(
       name: "ERC20",
@@ -54,10 +78,40 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Greeter>;
     getContractAt(
+      name: "Auction",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Auction>;
+    getContractAt(
+      name: "AuctionHouseService",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.AuctionHouseService>;
+    getContractAt(
       name: "USDC",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.USDC>;
+    getContractAt(
+      name: "IAuction",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IAuction>;
+    getContractAt(
+      name: "IAuctionHouseService",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IAuctionHouseService>;
+    getContractAt(
+      name: "IAuctionHouseService",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IAuctionHouseService>;
+    getContractAt(
+      name: "IAuction",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IAuction>;
 
     // default types
     getContractFactory(

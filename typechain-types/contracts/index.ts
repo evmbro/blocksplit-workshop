@@ -3,4 +3,6 @@
 /* eslint-disable */
 import type * as impl from "./impl";
 export type { impl };
+import type * as interfaces from "./interfaces";
+export type { interfaces };
 export type { Greeter } from "./Greeter";
