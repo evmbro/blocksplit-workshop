@@ -76,6 +76,7 @@ describe("Auction House Service", async () => {
             auctionMinBid,
             duration
         );
+
         const auctionCreationTxReceipt = await ethers.provider.waitForTransaction(auctionCreationTx.hash);
         const parsedLog = auctionHouseService.interface.parseLog(auctionCreationTxReceipt.logs[0]);
         
