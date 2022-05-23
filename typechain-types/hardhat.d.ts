@@ -49,13 +49,13 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IAuctionHouseService__factory>;
     getContractFactory(
-      name: "IAuctionHouseService",
+      name: "IQueryService",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IAuctionHouseService__factory>;
+    ): Promise<Contracts.IQueryService__factory>;
     getContractFactory(
-      name: "IAuction",
+      name: "QueryService",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IAuction__factory>;
+    ): Promise<Contracts.QueryService__factory>;
 
     getContractAt(
       name: "ERC20",
@@ -103,15 +103,15 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IAuctionHouseService>;
     getContractAt(
-      name: "IAuctionHouseService",
+      name: "IQueryService",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.IAuctionHouseService>;
+    ): Promise<Contracts.IQueryService>;
     getContractAt(
-      name: "IAuction",
+      name: "QueryService",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.IAuction>;
+    ): Promise<Contracts.QueryService>;
 
     // default types
     getContractFactory(

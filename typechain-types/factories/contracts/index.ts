@@ -3,4 +3,5 @@
 /* eslint-disable */
 export * as impl from "./impl";
 export * as interfaces from "./interfaces";
+export * as service from "./service";
 export { Greeter__factory } from "./Greeter__factory";

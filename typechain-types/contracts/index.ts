@@ -5,4 +5,6 @@ import type * as impl from "./impl";
 export type { impl };
 import type * as interfaces from "./interfaces";
 export type { interfaces };
+import type * as service from "./service";
+export type { service };
 export type { Greeter } from "./Greeter";
